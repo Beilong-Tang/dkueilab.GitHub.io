@@ -1,0 +1,17 @@
+.featurette-divider {
+    margin-bottom: 1rem !important;
+}
+
+.text-column {
+    align-items: center;
+    display: flex;
+}
+
+.text-column div {
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin-bottom: 1rem !important;
+}
