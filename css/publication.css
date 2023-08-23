@@ -5,7 +5,7 @@
 .text-column {
     align-items: center;
     display: flex;
-    min-width: 500px
+    min-height: 500px
 }
 
 .text-column div {
