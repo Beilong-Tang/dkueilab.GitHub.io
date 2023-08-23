@@ -32,6 +32,37 @@
         font-size: 3.5rem;
       }
     }
+        /* Card Styling */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            text-align: left;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            /* background-color: #007BFF; */
+            /* color: ; */
+            /* text underline */
+            text-decoration: underline;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ced1d4;
+        }
   </style>
 
 
@@ -81,22 +112,41 @@
 
     <div class="container marketing">
 
-      <h2 id='fedcampus' style="scroll-margin-top: 200px;"><strong class="text-primary">FedCampus</strong>
-      </h2>
+      <!-- <h2 id='fedcampus' style="scroll-margin-top: 200px;"><strong class="text-primary">FedCampus</strong>
+      </h2> -->
 
 
-
+<!-- 
       <hr class="featurette-divider mt-0">
+      <br> -->
+
+      <!-- <hr class="featurette-divider"> -->
+
+      <div class="card">
+        <h1>FedCampus</h1>
+        <p>In a world teeming with edge devices, 
+          FedCampus offers a secure and effective support for Cross-Device Federated Learning, 
+          bridging of the gap between academic research and real-world applicability.
+        </p>
+        <ul>
+            <li><strong>🌐  Cross-Device Collaboration:</strong> Across mobile platforms, encompassing both iOS and Android.</li>
+            <li><strong>🔐 Privacy-First:</strong> Safeguard user data and sets a new standard for responsible data handling in the world of FL & FA.</li>
+            <li><strong>🚀 Case-study:</strong> Real-time Federated Learning with Health Data.</li>
+        </ul>
+        <a href="./detail_subpage/fedcampus_intro.html" class="btn">Learn More</a>
+      </div>
+
+      <!-- <hr class="featurette-divider mt-0">
       <br>
 
-      <hr class="featurette-divider">
-
-
+      <hr class="featurette-divider"> -->
+      
     </div><!-- /.container -->
 
 
     <!-- FOOTER -->
     <footer class="container">
+      <hr class="featurette-divider"> 
       <p class="float-end"><a href="#fedcampus">Back to top</a></p>
       <p>&copy; DKU Edge Intelligence Lab</p>
     </footer>
