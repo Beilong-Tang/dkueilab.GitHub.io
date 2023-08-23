@@ -10,7 +10,6 @@
   <title>Edge Intelligence Lab</title>
   <link rel="icon" href="edge.svg" type="image/x-icon" />
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
   <!-- Bootstrap core CSS -->
   <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/index.css" rel="stylesheet">
@@ -58,10 +57,10 @@
               <a class="nav-link" href="publication.html">Publications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">People</a>
+              <a class="nav-link" href="people.html">People</a>
             </li>
           </ul>
         </div>
@@ -73,12 +72,12 @@
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active " id="introduction" style="scroll-margin-top: 200px;">
           <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-          <img class="bd-placeholder-img" src="bg.jpg" style="width: 100%;height: 100%;object-fit: cover;">
+          <img class="bd-placeholder-img" src="bg-min.jpg" style="width: 100%;height: 100%;object-fit: cover;">
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>DKU Edge Intelligence Lab</h1>
+              <h1 class="text-primary"><strong>DKU Edge Intelligence Lab</strong></h1>
             </div>
           </div>
         </div>
@@ -96,7 +95,7 @@
       <!-- START THE FEATURETTES -->
       <div class="row featurette">
         <div class="col-md-12">
-          <h2 class>Introduction</h2>
+          <h2 class="text-primary" style="font-weight: 600;">Introduction</h2>
           <p class="lead">The DKU Edge Intelligence Lab, under the guidance of
             Dr. Bing Luo, is dedicated to the exploration and advancement of
             cutting-edge interdisciplinary research, spanning federated and
@@ -111,7 +110,7 @@
       <hr class="featurette-divider">
       <div class="row ">
         <div class="col-md-12 order-md-1">
-          <h2 class>News</h2>
+          <h2 class="text-primary" style="font-weight: 600;"> News</h2>
           <p>[Aug. 2023] Research Project on Federated Learning received 2023 Suzhou Basic Research Program (Frontier
             Technology Research). This project (PI: Dr. Bing Luo) is joint with China Mobile (Suzhou) R&D Center and
             Soochow University.</p>
@@ -177,7 +176,7 @@
 
       <div class="row featurette">
         <div class="col-md-12">
-          <h2 class>Recruiting</h2>
+          <h2 class="text-primary" style="font-weight: 600;"> Recruiting</h2>
           <p>Interested applicants (majoring in EE/CS or related) with strong
             mathematical and machine learning backgrounds, please email me
             your CV, transcript, awards, and publications (if any) at <a href='mailto:bing.luo@dukekunshan.edu.cn'
@@ -196,9 +195,8 @@
 
     <!-- FOOTER -->
     <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a>
-        &middot; <a href="#">Terms</a></p>
+      <p class="float-end"><a href="#introduction">Back to top</a></p>
+      <p>&copy; DKU Edge Intelligence Lab</p>
     </footer>
   </main>
 
