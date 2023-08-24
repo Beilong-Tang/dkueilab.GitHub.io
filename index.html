@@ -1,315 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.84.0" />
-    <title>DKU Edge Intelligence Lab</title>
-    <link rel="icon" href="edge.svg" type="image/x-icon" />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/carousel/"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./css/index.css" rel="stylesheet" />
 
-    <script>
-      document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-          document.querySelector("#loader").style.visibility = "visible";
-        } else {
-          document.querySelector("#loader").style.display = "none";
-        }
-      };
-    </script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.84.0" />
+  <title>DKU Edge Intelligence Lab</title>
+  <link rel="icon" href="edge.svg" type="image/x-icon" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" />
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState !== "complete") {
+        document.querySelector("#loader").style.visibility = "visible";
+      } else {
+        document.querySelector("#loader").style.display = "none";
       }
+    };
+  </script>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      .title {
-        background-image: linear-gradient(to right, #f0e9e9, #a5b8e2);
-        -webkit-background-clip: text;
-        border-top: 2em;
-        color: transparent;
-        display: inline;
-      }
-    </style>
+    .title {
+      background-image: linear-gradient(to right, #f0e9e9, #a5b8e2);
+      -webkit-background-clip: text;
+      border-top: 2em;
+      color: transparent;
+      display: inline;
+    }
+  </style>
 
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet" />
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet" />
+</head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container">
-          <img src="edge.svg" style="height: 50px; margin-right: 20px" />
-          <a class="navbar-brand" href="#"> DKU Edge Intelligence Lab</a>
-          <div></div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarCollapse"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="publication.html">Publications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="people.html">People</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <img src="edge.svg" style="height: 50px; margin-right: 20px" />
+        <a class="navbar-brand" href="#"> DKU Edge Intelligence Lab</a>
+        <div></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publication.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div
-            class="carousel-item active"
-            id="introduction"
-            style="scroll-margin-top: 200px"
-          >
-            <img
-              class="bd-placeholder-img"
-              src="bg-min.jpg"
-              style="width: 100%; height: 100%; object-fit: cover"
-            />
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <div id="loader">
-                  <div class="spinner-grow text-muted"></div>
-                  <div class="spinner-grow text-muted"></div>
-                  <div class="spinner-grow text-muted"></div>
-                </div>
-                <h1 class="title">
-                  <strong>DKU Edge Intelligence Lab</strong>
-                </h1>
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="introduction" style="scroll-margin-top: 200px">
+          <img class="bd-placeholder-img" src="bg-min.jpg" style="width: 100%; height: 100%; object-fit: cover" />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <div id="loader">
+                <div class="spinner-grow text-muted"></div>
+                <div class="spinner-grow text-muted"></div>
+                <div class="spinner-grow text-muted"></div>
               </div>
+              <h1 class="title">
+                <strong>DKU Edge Intelligence Lab</strong>
+              </h1>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Marketing messaging and featurettes
+    <!-- Marketing messaging and featurettes
   ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <div class="container marketing">
-        <!-- Three columns of text below the carousel -->
-        <!-- START THE FEATURETTES -->
-        <div class="row featurette">
-          <div class="col-md-12">
-            <h2 class="text-primary" style="font-weight: 600">Introduction</h2>
-            <p class="lead">
-              The DKU Edge Intelligence Lab, under the guidance of Dr. Bing Luo,
-              is dedicated to the exploration and advancement of cutting-edge
-              interdisciplinary research, spanning federated and distributed
-              machine learning, wireless communications, networking, game
-              theory, and optimization, with practical applications in
-              edge-based artificial intelligence (Edge AI), privacy computing,
-              Internet of Things (IoT), and the evolution of 5G/6G wireless
-              systems.
-            </p>
-          </div>
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <!-- START THE FEATURETTES -->
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2 class="text-primary" style="font-weight: 600">Introduction</h2>
+          <p class="lead">
+            The DKU Edge Intelligence Lab, under the guidance of <a href="https://luobing1008.github.io/index.html"
+              target="_blank">Dr.
+              Bing Luo</a>,
+            is dedicated to the exploration and advancement of cutting-edge
+            interdisciplinary research, spanning federated and distributed
+            machine learning, wireless communications, networking, game
+            theory, and optimization, with practical applications in
+            edge-based artificial intelligence (Edge AI), privacy computing,
+            Internet of Things (IoT), and the evolution of 5G/6G wireless
+            systems.
+          </p>
         </div>
-
-        <hr class="featurette-divider" />
-        <div class="row">
-          <div class="col-md-12 order-md-1">
-            <h2 class="text-primary" style="font-weight: 600">News</h2>
-            <p>
-              [Aug. 2023] Federated Learning research proposal received funding
-              from the 2023 Suzhou Basic Research Program (Frontier Technology
-              Research). This project (PI: Dr. Bing Luo) is joint with China
-              Mobile (Suzhou) R&D Center and Soochow University.
-            </p>
-            <p>
-              [Jun. 2023]] Our paper on differential private federated analytics
-              has been accepted by Federated Learning and Analytics in Practice:
-              Algorithms, Systems, Applications, and Opportunities (<a
-                href="https://fl-icml2023.github.io/"
-                >FL-ICML&#39; 23</a
-              >). Congratulations to my supervised CUHKSZ undergraduate student
-              <a href="https://jiaqi-shao-academic-page.vercel.app/"
-                >Jiaqi Shao</a
-              >, who will become a PhD student at HKUST this Fall co-supervised
-              by me and Prof.
-              <a href="https://eexcao.people.ust.hk/">Xuanyu Cao</a>!
-            </p>
-            <p>
-              [May. 2023] Our paper on federated reinforcement learning for
-              robotics has been accepted by ICDCS 2023 Demo and Poster program.
-              Congratulations to my supervised CUHKSZ undergraduate students
-              Wenli Xiao (admitted by CMU Robotics Institute) and Tingwei Ye(now
-              in NYU)!
-            </p>
-            <p>
-              [Apr. 2023] Our paper on incentivizing unbiased federated learning
-              has been accepted to ICDCS 2023 (Track on AI for Distributed
-              Systems and Distributed Systems for AI)
-            </p>
-            <p>
-              [Mar. 2023] Our paper &quot;Optimization Design for Federated
-              Learning in Heterogeneous 6G Networks&quot; got accepted in IEEE
-              Network, Special Issue on 6G Network AI Architecture for
-              Customized Services and Applications, 2023.
-            </p>
-            <p>
-              [Jan. 2023] I was elected as the Executive Committee at the
-              Technical Committee of Computational Economics (TCCE), China
-              Computer Federation (CCF)
-            </p>
-            <p>
-              [Sep. 2022] I joined Duke Kunshan University (DKU) as a
-              Tenure-Track Assistant Professor.
-            </p>
-            <p>
-              [June, 2022] Prof. Jianwei Huang and I have organized a series of
-              federated learning online seminars at AIRS in this June. The
-              invited speakers and talk details are as follows:
-            </p>
-            <ul>
-              <li>
-                <a href="https://mp.weixin.qq.com/s/VohEe8HtxVKgTeaer52EVg"
-                  >Session 1</a
-                >
-                (7th June):
-                <a href="https://www.avestimehr.com/"
-                  >Prof. Salman Avestimehr</a
-                >
-                (USC),
-                <a href="https://chaoyanghe.com/">Dr. Chaoyang He</a> (FedML),
-                <a
-                  href="https://www.bilibili.com/video/BV1RY4y1x7Va?spm_id_from=333.337.search-card.all.click"
-                  >video online available</a
-                >.
-              </li>
-              <li>
-                <a href="https://mp.weixin.qq.com/s/AQPxYId_DWP_C2VdeEdSNQ"
-                  >Session 2</a
-                >
-                (14th June):
-                <a
-                  href="https://seas.yale.edu/faculty-research/faculty-directory/leandros-tassiulas/"
-                  >Prof. Leandros Tassiulas</a
-                >
-                (Yale),
-                <a
-                  href="https://cse.hkust.edu.hk/admin/people/faculty/profile/qyang"
-                  >Prof. Qiang Yang</a
-                >
-                (WeBank &amp; HKUST),
-                <a
-                  href="https://www.bilibili.com/video/BV1eL4y1N7pd?spm_id_from=333.337.search-card.all.click"
-                  >vedio online available</a
-                >.
-              </li>
-              <li>
-                <a href="https://mp.weixin.qq.com/s/fIzr35k1sWvt-6-zPwylgg"
-                  >Session 3</a
-                >
-                (21th June):
-                <a href="https://luobing1008.github.io/">Dr. Bing Luo</a> (AIRS
-                &amp; Yale),
-                <a
-                  href="https://researcher.watson.ibm.com/researcher/view.php?person=us-wangshiq"
-                  >Dr. Shiqiang Wang</a
-                >
-                (IBM),
-                <a href="https://www.bilibili.com/video/BV1Xf4y1o7ve"
-                  >vedio online available</a
-                >.
-              </li>
-              <li>
-                <a href="https://mp.weixin.qq.com/s/2mDKCS4SSx04VC56NRzyOw"
-                  >Session 4</a
-                >
-                (28th June):
-                <a href="https://kairouzp.github.io/">Dr. Peter Kairouz</a>
-                (Google),
-                <a href="https://aisecure.github.io/">Prof. Bo Li</a> (UIUC),
-                <a href="https://www.bilibili.com/video/BV1xY4y1n7FS"
-                  >vedio online available</a
-                >.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-12">
-            <h2 class="text-primary" style="font-weight: 600">Recruiting</h2>
-            <p>
-              Interested applicants (majoring in EE/CS or related) with strong
-              mathematical and machine learning backgrounds, please email me
-              your CV, transcript, awards, and publications (if any) at
-              <a
-                href="mailto:bing.luo@dukekunshan.edu.cn"
-                target="_blank"
-                class="url"
-                >bing.luo@dukekunshan.edu.cn</a
-              >.
-            </p>
-            <p>
-              Note: please make your email subject as [PhD/RA/research
-              scientist/Intern Application] Name-School-Major.
-            </p>
-            <p>Scholarship/Salary will be highly competitive!!</p>
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <!-- /END THE FEATURETTES -->
       </div>
-      <!-- /.container -->
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#introduction">Back to top</a></p>
-        <p>&copy; DKU Edge Intelligence Lab</p>
-      </footer>
-    </main>
+      <hr class="featurette-divider" />
+      <div class="row">
+        <div class="col-md-12 order-md-1">
+          <h2 class="text-primary" style="font-weight: 600">News</h2>
+          <p>[Aug. 2023] Hosted and Co-organized by DKU Edge Intelligence Lab, the first Amazon DeepRacer event will
+            come to DKU on August 25th. Amazon DeepRacer is the fastest way to get rolling with reinforcement learning
+            (RL) with a fully autonomous 1/18th scale race car driven by reinforcement learning, 3D racing simulator,
+            and a global racing league. Developers can have the unique opportunity to get hands-on to train, evaluate,
+            and tune RL models in the online simulator, deploy their models onto Amazon DeepRacer for a real-world
+            autonomous experience.</p>
+          <img src="./assets/aws-race.jpg" style="width: 50%; margin-bottom: 40px;">
+          <p>
+            [Aug. 2023] Federated Learning research proposal received funding
+            from the 2023 Suzhou Basic Research Program (Frontier Technology
+            Research). This project (PI: Dr. Bing Luo) is joint with China
+            Mobile (Suzhou) R&D Center and Soochow University.
+          </p>
+          <p>
+            [Jun. 2023]] Our paper on differential private federated analytics
+            has been accepted by Federated Learning and Analytics in Practice:
+            Algorithms, Systems, Applications, and Opportunities (<a href="https://fl-icml2023.github.io/">FL-ICML&#39;
+              23</a>). Congratulations to my supervised CUHKSZ undergraduate student
+            <a href="https://jiaqi-shao-academic-page.vercel.app/">Jiaqi Shao</a>, who will become a PhD student at
+            HKUST this Fall co-supervised
+            by me and Prof.
+            <a href="https://eexcao.people.ust.hk/">Xuanyu Cao</a>!
+          </p>
+          <p>
+            [May. 2023] Our paper on federated reinforcement learning for
+            robotics has been accepted by ICDCS 2023 Demo and Poster program.
+            Congratulations to my supervised CUHKSZ undergraduate students
+            Wenli Xiao (admitted by CMU Robotics Institute) and Tingwei Ye(now
+            in NYU)!
+          </p>
+          <p>
+            [Apr. 2023] Our paper on incentivizing unbiased federated learning
+            has been accepted to ICDCS 2023 (Track on AI for Distributed
+            Systems and Distributed Systems for AI)
+          </p>
+          <p>
+            [Mar. 2023] Our paper &quot;Optimization Design for Federated
+            Learning in Heterogeneous 6G Networks&quot; got accepted in IEEE
+            Network, Special Issue on 6G Network AI Architecture for
+            Customized Services and Applications, 2023.
+          </p>
+          <p>
+            [Jan. 2023] I was elected as the Executive Committee at the
+            Technical Committee of Computational Economics (TCCE), China
+            Computer Federation (CCF)
+          </p>
+          <p>
+            [Sep. 2022] I joined Duke Kunshan University (DKU) as a
+            Tenure-Track Assistant Professor.
+          </p>
+          <p>
+            [June, 2022] Prof. Jianwei Huang and I have organized a series of
+            federated learning online seminars at AIRS in this June. The
+            invited speakers and talk details are as follows:
+          </p>
+          <ul>
+            <li>
+              <a href="https://mp.weixin.qq.com/s/VohEe8HtxVKgTeaer52EVg">Session 1</a>
+              (7th June):
+              <a href="https://www.avestimehr.com/">Prof. Salman Avestimehr</a>
+              (USC),
+              <a href="https://chaoyanghe.com/">Dr. Chaoyang He</a> (FedML),
+              <a href="https://www.bilibili.com/video/BV1RY4y1x7Va?spm_id_from=333.337.search-card.all.click">video
+                online available</a>.
+            </li>
+            <li>
+              <a href="https://mp.weixin.qq.com/s/AQPxYId_DWP_C2VdeEdSNQ">Session 2</a>
+              (14th June):
+              <a href="https://seas.yale.edu/faculty-research/faculty-directory/leandros-tassiulas/">Prof. Leandros
+                Tassiulas</a>
+              (Yale),
+              <a href="https://cse.hkust.edu.hk/admin/people/faculty/profile/qyang">Prof. Qiang Yang</a>
+              (WeBank &amp; HKUST),
+              <a href="https://www.bilibili.com/video/BV1eL4y1N7pd?spm_id_from=333.337.search-card.all.click">vedio
+                online available</a>.
+            </li>
+            <li>
+              <a href="https://mp.weixin.qq.com/s/fIzr35k1sWvt-6-zPwylgg">Session 3</a>
+              (21th June):
+              <a href="https://luobing1008.github.io/">Dr. Bing Luo</a> (AIRS
+              &amp; Yale),
+              <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-wangshiq">Dr. Shiqiang Wang</a>
+              (IBM),
+              <a href="https://www.bilibili.com/video/BV1Xf4y1o7ve">vedio online available</a>.
+            </li>
+            <li>
+              <a href="https://mp.weixin.qq.com/s/2mDKCS4SSx04VC56NRzyOw">Session 4</a>
+              (28th June):
+              <a href="https://kairouzp.github.io/">Dr. Peter Kairouz</a>
+              (Google),
+              <a href="https://aisecure.github.io/">Prof. Bo Li</a> (UIUC),
+              <a href="https://www.bilibili.com/video/BV1xY4y1n7FS">vedio online available</a>.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <script src="./dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2 class="text-primary" style="font-weight: 600">Recruiting</h2>
+          <p>
+            Interested applicants (majoring in EE/CS or related) with strong
+            mathematical and machine learning backgrounds, please email me
+            your CV, transcript, awards, and publications (if any) at
+            <a href="mailto:bing.luo@dukekunshan.edu.cn" target="_blank" class="url">bing.luo@dukekunshan.edu.cn</a>.
+          </p>
+          <p>
+            Note: please make your email subject as [PhD/RA/research
+            scientist/Intern Application] Name-School-Major.
+          </p>
+          <p>Scholarship/Salary will be highly competitive!!</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- /END THE FEATURETTES -->
+    </div>
+    <!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#introduction">Back to top</a></p>
+      <p>&copy; DKU Edge Intelligence Lab</p>
+    </footer>
+  </main>
+
+  <script src="./dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
